@@ -1,11 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import About from '../components/About.astro';
 ---
 
 <Layout>
   <div id="tsparticles" class="fixed inset-0 z-0 bg-[#050505]"></div>
 
-  <div class="relative z-10 min-h-screen flex flex-col w-full pointer-events-none">
+  <div class="relative z-10 h-screen flex flex-col w-full pointer-events-none snap-start">
     
     <header class="w-full py-8 px-6 md:px-16 lg:px-24 flex justify-start items-center pointer-events-auto">
       <div class="text-2xl font-bold tracking-tighter text-white font-mono">
@@ -27,7 +28,7 @@ import Layout from '../layouts/Layout.astro';
         </p>
 
         <div class="pt-6">
-          <a href="#projetos" class="inline-flex items-center justify-center w-12 h-12 bg-white text-black hover:bg-gray-300 transition-colors cursor-pointer group" aria-label="Ver projetos">
+          <a href="#sobre" class="inline-flex items-center justify-center w-12 h-12 bg-white text-black hover:bg-gray-300 transition-colors cursor-pointer group" aria-label="Descer para Sobre Mim">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -37,6 +38,9 @@ import Layout from '../layouts/Layout.astro';
 
     </main>
   </div>
+
+  <About />
+  
 </Layout>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
