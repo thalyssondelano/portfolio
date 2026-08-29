@@ -2,61 +2,63 @@
 // src/components/About.astro
 ---
 
-<section id="sobre" class="w-full h-screen flex items-center px-6 md:px-16 lg:px-24 py-24 relative z-10 pointer-events-auto snap-start">
-  <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<section id="sobre" class="w-full h-dvh flex flex-col justify-center relative z-10 pointer-events-auto snap-start snap-always shrink-0 overflow-hidden">
+
+  <div class="w-full h-full overflow-y-auto px-6 md:px-16 lg:px-24 py-20 flex items-center">
     
-    <!-- Sobre Mim -->
-    <div class="space-y-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 font-mono tracking-tight">
-        Sobre mim
-      </h2>
+    <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-start lg:items-center py-10 my-auto">
       
-      <div class="text-gray-400 font-mono text-base md:text-lg leading-relaxed space-y-5">
-        <p>
-          Sou um desenvolvedor Full Stack com forte foco no back-end, especializado em construir aplicações seguras e arquiteturas de sistemas escaláveis.
-        </p>
-        <p>
-        </p>
-        <p>
-          Com habilidades sólidas no desenvolvimento web, entrego front-ends responsivos e desenvolvo projetos de integração com sistemas IoT/Embarcados, sempre visando criar soluções tecnológicas eficientes e inovadoras.
-        </p>
-      </div>
-    </div>
-
-    <!-- Habilidades -->
-    <div class="space-y-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-white font-mono tracking-tight">
-        Minhas habilidades
-      </h2>
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <!-- Sobre Mim -->
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-teal-400 font-mono tracking-tight">
+          Sobre mim
+        </h2>
         
-        <!-- Card Back-End -->
-        <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
-          <h3 class="text-white font-bold font-mono mb-2">Back-End</h3>
-          <p class="text-sm text-gray-400 font-mono leading-relaxed">Desenvolvo APIs, arquiteturas e sistemas backend voltados para performance, segurança e escalabilidade.</p>
+        <div class="text-gray-400 font-mono text-base md:text-lg leading-relaxed space-y-5">
+          <p>
+            Sou um desenvolvedor Full Stack com forte foco no back-end, especializado em construir aplicações seguras e arquiteturas de sistemas escaláveis.
+          </p>
+          <p>
+            Com habilidades sólidas no desenvolvimento web, entrego front-ends responsivos e desenvolvo projetos de integração com sistemas IoT/Embarcados, sempre visando criar soluções tecnológicas eficientes e inovadoras.
+          </p>
         </div>
-
-        <!-- Card Front End -->
-        <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
-          <h3 class="text-white font-bold font-mono mb-2">Front-End</h3>
-          <p class="text-sm text-gray-400 font-mono leading-relaxed">Implemento interfaces e aplicações web com foco em clareza, interatividade e experiência do usuário.</p>
-        </div>
-
-        <!-- Card IoT & Embarcados -->
-        <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
-          <h3 class="text-white font-bold font-mono mb-2">IoT & Embarcados</h3>
-          <p class="text-sm text-gray-400 font-mono leading-relaxed">Crio arquiteturas de firmware e soluções de telemetria, conectando o hardware ao mundo digital em tempo real.</p>
-        </div>
-
-        <!-- Card Infraestrutura -->
-        <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
-          <h3 class="text-white font-bold font-mono mb-2">Infraestrutura</h3>
-          <p class="text-sm text-gray-400 font-mono leading-relaxed">Gerencio ambientes, servidores e hospedagem, automatizando entregas para garantir a alta disponibilidade dos sistemas.</p>
-        </div>
-
       </div>
-    </div>
 
+      <!-- Habilidades -->
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-white font-mono tracking-tight">
+          Minhas habilidades
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-10 lg:pb-0">
+          
+          <!-- Card Back-End -->
+          <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
+            <h3 class="text-white font-bold font-mono mb-2">Back-End</h3>
+            <p class="text-sm text-gray-400 font-mono leading-relaxed">Desenvolvo APIs, arquiteturas e sistemas backend voltados para performance, segurança e escalabilidade.</p>
+          </div>
+
+          <!-- Card Front End -->
+          <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
+            <h3 class="text-white font-bold font-mono mb-2">Front-End</h3>
+            <p class="text-sm text-gray-400 font-mono leading-relaxed">Implemento interfaces e aplicações web com foco em clareza, interatividade e experiência do usuário.</p>
+          </div>
+
+          <!-- Card IoT & Embarcados -->
+          <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
+            <h3 class="text-white font-bold font-mono mb-2">IoT & Embarcados</h3>
+            <p class="text-sm text-gray-400 font-mono leading-relaxed">Crio arquiteturas de firmware e soluções de telemetria, conectando o hardware ao mundo digital em tempo real.</p>
+          </div>
+
+          <!-- Card Infraestrutura -->
+          <div class="bg-[#0a0a0a]/80 backdrop-blur-sm border border-gray-800 p-6 rounded-lg transition-all duration-300 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(45,212,191,0.15)] group">
+            <h3 class="text-white font-bold font-mono mb-2">Infraestrutura</h3>
+            <p class="text-sm text-gray-400 font-mono leading-relaxed">Gerencio ambientes, servidores e hospedagem, automatizando entregas para garantir a alta disponibilidade dos sistemas.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
